@@ -1,0 +1,8 @@
+name: Shopper
+version: '${project.version}'
+main: me.puugz.shopper.Shopper
+api-version: 1.18
+author: puugz
+
+commands:
+  deleteshops:
