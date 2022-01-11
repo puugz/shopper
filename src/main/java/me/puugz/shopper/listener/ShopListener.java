@@ -48,14 +48,14 @@ public class ShopListener implements Listener {
         if (shop == null) return;
 
         if (data instanceof Chest) {
-            if (player.getUniqueId() != shop.getOwner() && !player.hasPermission("shopper.bypass")) {
+            if (!player.getUniqueId().equals(shop.getOwner()) && !player.hasPermission("shopper.bypass")) {
                 player.sendMessage("§cYou can't open this chest!");
                 event.setCancelled(true);
             }
         }
 
         if (data instanceof WallSign) {
-            if (player.getUniqueId() == shop.getOwner()) {
+            if (player.getUniqueId().equals(shop.getOwner())) {
                 player.sendMessage("§cYou can't buy from yourself.");
             } else {
                 final Material paymentType = shop.getPaymentItemType();
@@ -176,7 +176,7 @@ public class ShopListener implements Listener {
                 .getByLocation(block.getLocation());
 
         if (shop != null) {
-            if (player.getUniqueId() != shop.getOwner() && !player.hasPermission("shopper.bypass")) {
+            if (!player.getUniqueId().equals(shop.getOwner()) && !player.hasPermission("shopper.bypass")) {
                 player.sendMessage("§cYou can't break this block!");
                 event.setCancelled(true);
             } else {
@@ -308,9 +308,5 @@ public class ShopListener implements Listener {
         }
 
         return output;
-    }
-    
-    private void print(Object o) {
-        Shopper.getInstance().getLogger().info(o.toString());
     }
 }
