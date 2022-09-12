@@ -13,16 +13,16 @@ Chest shop plugin for minecraft.
 ## Screenshots
 Out of stock shop
 
-![Out of stock](2022-01-09_06.09.48.png "Out of stock")
+![Out of stock](docs/2022-01-09_06.09.48.png "Out of stock")
 ---
 In stock shop
 
-![In stock](2022-01-09_06.10.20.png "In stock")
+![In stock](docs/2022-01-09_06.10.20.png "In stock")
 ---
 Example setup
 
-![Example setup](2022-01-09_06.15.05.png "Example setup")
+![Example setup](docs/2022-01-09_06.15.05.png "Example setup")
 ---
 Purchase message
 
-![Purchase message](2022-01-09_06.21.03.png "Purchase message")
+![Purchase message](docs/2022-01-09_06.21.03.png "Purchase message")
